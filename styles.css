@@ -935,15 +935,15 @@ body {
 .about-me-content {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
+  gap: 1rem;
   margin-top: 3rem;
   margin-bottom: 4rem;
 }
 
 .about-me-card {
   background: var(--card-bg);
-  border-radius: 1.5rem;
-  padding: 1rem 0.8rem;
+  border-radius: 1rem;
+  padding: 1.5rem;
   border: 2px solid var(--border-color);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
@@ -973,15 +973,15 @@ body {
 }
 
 .about-me-icon {
-  width: 42px;
-  height: 42px;
-  border-radius: 1.25rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 0.75rem;
   background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   position: relative;
   overflow: hidden;
 }
@@ -1001,16 +1001,16 @@ body {
 }
 
 .about-me-card-title {
-  font-size: 1.5rem;
+  font-size: 1.125rem;
   font-weight: 700;
   color: var(--text-primary);
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 .about-me-text {
   color: var(--text-secondary);
-  line-height: 1.8;
-  font-size: 1rem;
+  line-height: 1.6;
+  font-size: 0.875rem;
 }
 
 .about-me-stats {
@@ -1055,7 +1055,6 @@ body {
   font-weight: 600;
 }
 
-/* Nuevos gradientes para los iconos adicionales */
 .api-icon {
   background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
 }
@@ -1068,8 +1067,6 @@ body {
   background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
 }
 
-/* Responsive design mejorado para las nuevas secciones */
-/* Responsive Design */
 @media (max-width: 1024px) {
   .skill-large {
     grid-column: span 12;
@@ -1092,7 +1089,7 @@ body {
   }
 
   .about-me-content {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
   }
 
@@ -1133,7 +1130,6 @@ body {
     gap: 1rem;
   }
 
-  /* Completando los estilos responsive que faltaban */
   .skill-large,
   .skill-medium,
   .skill-small {
@@ -1152,6 +1148,10 @@ body {
 
   .stat-number {
     font-size: 2rem;
+  }
+
+  .about-me-content {
+    grid-template-columns: 1fr;
   }
 
   .about-me-card {
@@ -1207,5 +1207,258 @@ body {
 
   .stat-box .stat-number {
     font-size: 2rem;
+  }
+}
+
+/* Agregando estilos para el modal de tecnologías */
+/* Tech Modal Styles */
+.tech-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.tech-modal.active {
+  display: flex;
+}
+
+.tech-modal-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.tech-modal-content {
+  position: relative;
+  background: var(--card-bg);
+  border-radius: 1.5rem;
+  max-width: 600px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+  border: 2px solid var(--border-color);
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tech-modal-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.tech-modal-close:hover {
+  background: var(--accent-primary);
+  color: white;
+  transform: rotate(90deg);
+}
+
+.tech-modal-header {
+  padding: 3rem 2rem 2rem;
+  background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.tech-modal-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 1.25rem;
+  background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 800;
+  box-shadow: 0 10px 30px rgba(59, 130, 246, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.tech-modal-icon::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  filter: blur(20px);
+  opacity: 0.5;
+}
+
+.tech-modal-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.tech-modal-body {
+  padding: 2rem;
+}
+
+.tech-modal-description {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.tech-modal-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: var(--bg-secondary);
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tech-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.tech-stat-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.tech-stat-bar {
+  height: 12px;
+  background: var(--bg-tertiary);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.tech-stat-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+  border-radius: 1rem;
+  transition: width 0.6s ease;
+  position: relative;
+}
+
+.tech-stat-fill::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.3) 50%, transparent 100%);
+  animation: shimmer 2s infinite;
+}
+
+.tech-stat-value {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--accent-primary);
+}
+
+.tech-modal-features {
+  margin-top: 2rem;
+}
+
+.tech-features-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.tech-features-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.tech-features-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.tech-features-list li::before {
+  content: "✓";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+  color: white;
+  border-radius: 50%;
+  font-weight: 800;
+  font-size: 0.875rem;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .tech-modal-content {
+    margin: 1rem;
+  }
+
+  .tech-modal-header {
+    padding: 2.5rem 1.5rem 1.5rem;
+  }
+
+  .tech-modal-icon {
+    width: 64px;
+    height: 64px;
+    font-size: 1.5rem;
+  }
+
+  .tech-modal-title {
+    font-size: 1.5rem;
+  }
+
+  .tech-modal-body {
+    padding: 1.5rem;
   }
 }

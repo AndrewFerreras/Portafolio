@@ -16,6 +16,7 @@
                     <a href="#perfil" class="nav-link">Perfil</a>
                     <a href="#sobre-mi" class="nav-link">Sobre Mí</a>
                     <a href="#habilidades" class="nav-link">Habilidades</a>
+                    <a href="#proyectos" class="nav-link">Proyectos</a>
                     <a href="#contacto" class="nav-link">Contacto</a>
                     <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
                         <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -152,9 +153,10 @@
         <div class="container">
             <h3 class="section-title">Arsenal Tecnológico</h3>
             <p class="section-subtitle">Herramientas y tecnologías que domino para crear soluciones robustas</p>
+            
             <div class="skills-bento">
-
-                <div class="skill-bento-card skill-large" data-skill="backend-csharp">
+                <!-- Backend - Card Grande -->
+                <div class="skill-bento-card skill-large" data-skill="backend">
                     <div class="skill-bento-header">
                         <div class="skill-bento-icon backend-icon">
                             <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -163,17 +165,20 @@
                                 <line x1="12" y1="17" x2="12" y2="21"></line>
                             </svg>
                         </div>
-                        <h4 class="skill-bento-title">Backend C# & .NET</h4>
+                        <h4 class="skill-bento-title">Backend Development</h4>
                     </div>
                     <div class="skill-bento-content">
                         <div class="skill-tag-cloud">
                             <span class="skill-tag primary">C#</span>
-                            <span class="skill-tag primary">.NET Core/.NET 8</span>
+                            <span class="skill-tag primary">.NET 8</span>
                             <span class="skill-tag primary">ASP.NET Core</span>
+                            <span class="skill-tag secondary">RESTful APIs</span>
+                            <span class="skill-tag secondary">Microservicios</span>
                             <span class="skill-tag secondary">Entity Framework</span>
                             <span class="skill-tag secondary">LINQ</span>
                             <span class="skill-tag secondary">Dapper</span>
                             <span class="skill-tag secondary">Windows Forms</span>
+
                         </div>
                         <div class="skill-level">
                             <div class="skill-level-bar">
@@ -183,7 +188,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="skill-bento-card skill-medium" data-skill="backend-java">
                     <div class="skill-bento-header">
                         <div class="skill-bento-icon backend-icon">
@@ -201,7 +205,7 @@
                             <span class="skill-tag primary">Java</span>
                             <span class="skill-tag primary">Spring Boot</span>
                             <span class="skill-tag secondary">RESTful APIs</span>
-                            <span class="skill-tag secondary">Microservices</span>
+                            <span class="skill-tag secondary">Microservicios</span>
                         </div>
                         <div class="skill-level">
                             <div class="skill-level-bar">
@@ -212,6 +216,7 @@
                     </div>
                 </div>
 
+                <!-- Databases - Card Mediana -->
                 <div class="skill-bento-card skill-medium" data-skill="database">
                     <div class="skill-bento-header">
                         <div class="skill-bento-icon database-icon">
@@ -221,15 +226,15 @@
                                 <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
                             </svg>
                         </div>
-                        <h4 class="skill-bento-title">Bases de Datos & Búsqueda</h4>
+                        <h4 class="skill-bento-title">Bases de Datos</h4>
                     </div>
                     <div class="skill-bento-content">
                         <div class="skill-tag-cloud">
-                            <span class="skill-tag primary">MS SQL Server</span>
-                            <span class="skill-tag primary">MySQL</span>
+                            <span class="skill-tag primary">SQL Server</span>
                             <span class="skill-tag primary">MongoDB</span>
-                            <span class="skill-tag secondary">Elasticsearch</span>
+                            <span class="skill-tag secondary">MySQL</span>
                             <span class="skill-tag secondary">PostgreSQL</span>
+                            <span class="skill-tag secondary">Elasticsearch</span>
                         </div>
                         <div class="skill-level">
                             <div class="skill-level-bar">
@@ -240,6 +245,142 @@
                     </div>
                 </div>
 
+                <!-- Frontend - Card Mediana -->
+                <div class="skill-bento-card skill-large" data-skill="frontend">
+                    <div class="skill-bento-header">
+                        <div class="skill-bento-icon frontend-icon">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                        <h4 class="skill-bento-title">Frontend & UI</h4>
+                    </div>
+                    <div class="skill-bento-content">
+                        <div class="skill-tag-cloud">
+                            <span class="skill-tag primary">HTML5</span>
+                            <span class="skill-tag primary">CSS3</span>
+                            <span class="skill-tag primary">JavaScript</span>
+                            <span class="skill-tag secondary">React</span>
+                            <span class="skill-tag secondary">Razor Pages</span>
+                            <span class="skill-tag secondary">Bootstrap</span>
+                        </div>
+                        <div class="skill-level">
+                            <div class="skill-level-bar">
+                                <div class="skill-level-fill" style="width: 85%"></div>
+                            </div>
+                            <span class="skill-level-text">Avanzado - 85%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DevOps & Cloud - Card Pequeña -->
+                <div class="skill-bento-card skill-medium" data-skill="devops">
+                    <div class="skill-bento-icon devops-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <h4 class="skill-bento-title">DevOps & Cloud</h4>
+                    <div class="skill-tag-cloud">
+                        <span class="skill-tag primary">Docker</span>
+                        <span class="skill-tag primary">Azure</span>
+                        <span class="skill-tag secondary">AWS</span>
+                        <span class="skill-tag secondary">CI/CD</span>
+                        <span class="skill-tag secondary">Kubernetes</span>
+                    </div>
+                    <div class="skill-level">
+                        <div class="skill-level-bar">
+                            <div class="skill-level-fill" style="width: 80%"></div>
+                        </div>
+                        <span class="skill-level-text">Avanzado - 80%</span>
+                    </div>
+                </div>
+
+                <!-- Tools & Methodologies - Card Pequeña -->
+                <div class="skill-bento-card skill-large" data-skill="tools">
+                    <div class="skill-bento-icon tools-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                        </svg>
+                    </div>
+                    <h4 class="skill-bento-title">Herramientas</h4>
+                    <div class="skill-tag-cloud">
+                        <span class="skill-tag primary">Git</span>
+                        <span class="skill-tag primary">Visual Studio</span>
+                        <span class="skill-tag secondary">VS Code</span>
+                        <span class="skill-tag secondary">Postman</span>
+                        <span class="skill-tag secondary">Swagger</span>
+                        <span class="skill-tag secondary">JIRA</span>
+                    </div>
+                    <div class="skill-level">
+                        <div class="skill-level-bar">
+                            <div class="skill-level-fill" style="width: 90%"></div>
+                        </div>
+                        <span class="skill-level-text">Avanzado - 90%</span>
+                    </div>
+                </div>
+
+                <!-- API & Integration - Card Mediana -->
+                <div class="skill-bento-card skill-large" data-skill="api">
+                    <div class="skill-bento-header">
+                        <div class="skill-bento-icon api-icon">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                            </svg>
+                        </div>
+                        <h4 class="skill-bento-title">APIs & Integración</h4>
+                    </div>
+                    <div class="skill-bento-content">
+                        <div class="skill-tag-cloud">
+                            <span class="skill-tag primary">REST APIs</span>
+                            <span class="skill-tag primary">SOAP</span>
+                            <span class="skill-tag secondary">GraphQL</span>
+                            <span class="skill-tag secondary">SignalR</span>
+                            <span class="skill-tag secondary">WebSockets</span>
+                        </div>
+                        <div class="skill-level">
+                            <div class="skill-level-bar">
+                                <div class="skill-level-fill" style="width: 88%"></div>
+                            </div>
+                            <span class="skill-level-text">Avanzado - 88%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testing & Quality - Card Mediana -->
+                <div class="skill-bento-card skill-medium" data-skill="testing">
+                    <div class="skill-bento-header">
+                        <div class="skill-bento-icon testing-icon">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 11l3 3L22 4"></path>
+                                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                            </svg>
+                        </div>
+                        <h4 class="skill-bento-title">Testing & Calidad</h4>
+                    </div>
+                    <div class="skill-bento-content">
+                        <div class="skill-tag-cloud">
+                            <span class="skill-tag primary">xUnit</span>
+                            <span class="skill-tag primary">NUnit</span>
+                            <span class="skill-tag secondary">Moq</span>
+                            <span class="skill-tag secondary">Integration Tests</span>
+                            <span class="skill-tag secondary">Unit Testing</span>
+                            <span class="skill-tag secondary">TDD</span>
+                        </div>
+                        <div class="skill-level">
+                            <div class="skill-level-bar">
+                                <div class="skill-level-fill" style="width: 85%"></div>
+                            </div>
+                            <span class="skill-level-text">Avanzado - 85%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Architecture & Patterns - Card Grande -->
                 <div class="skill-bento-card skill-large" data-skill="architecture">
                     <div class="skill-bento-header">
                         <div class="skill-bento-icon architecture-icon">
@@ -256,12 +397,11 @@
                         <div class="skill-tag-cloud">
                             <span class="skill-tag primary">Clean Architecture</span>
                             <span class="skill-tag primary">SOLID</span>
-                            <span class="skill-tag primary">Microservicios</span>
+                            <span class="skill-tag secondary">MVC</span>
                             <span class="skill-tag secondary">CQRS</span>
                             <span class="skill-tag secondary">Repository Pattern</span>
                             <span class="skill-tag secondary">Dependency Injection</span>
-                            <span class="skill-tag secondary">MVC</span>
-                        </div>
+                       </div>
                         <div class="skill-level">
                             <div class="skill-level-bar">
                                 <div class="skill-level-fill" style="width: 92%"></div>
@@ -270,130 +410,11 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="skill-bento-card skill-small" data-skill="api">
-                    <div class="skill-bento-icon api-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
-                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
-                        </svg>
-                    </div>
-                    <h4 class="skill-bento-title">APIs & Seguridad</h4>
-                    <div class="skill-tag-cloud">
-                        <span class="skill-tag primary">REST APIs</span>
-                        <span class="skill-tag primary">SOAP</span>
-                        <span class="skill-tag secondary">JWT</span>
-                        <span class="skill-tag secondary">Bcrypt/Scrypt/SHA</span>
-                    </div>
-                    <div class="skill-level">
-                        <div class="skill-level-bar">
-                            <div class="skill-level-fill" style="width: 88%"></div>
-                        </div>
-                        <span class="skill-level-text">Avanzado - 88%</span>
-                    </div>
-                </div>
-
-                <div class="skill-bento-card skill-medium" data-skill="frontend">
-                    <div class="skill-bento-header">
-                        <div class="skill-bento-icon frontend-icon">
-                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="16 18 22 12 16 6"></polyline>
-                                <polyline points="8 6 2 12 8 18"></polyline>
-                            </svg>
-                        </div>
-                        <h4 class="skill-bento-title">Frontend & UI</h4>
-                    </div>
-                    <div class="skill-bento-content">
-                        <div class="skill-tag-cloud">
-                            <span class="skill-tag primary">HTML</span>
-                            <span class="skill-tag primary">CSS</span>
-                            <span class="skill-tag primary">JavaScript</span>
-                            <span class="skill-tag secondary">React</span>
-                            <span class="skill-tag secondary">Razor Pages</span>
-                            <span class="skill-tag secondary">Bootstrap</span>
-                        </div>
-                        <div class="skill-level">
-                            <div class="skill-level-bar">
-                                <div class="skill-level-fill" style="width: 85%"></div>
-                            </div>
-                            <span class="skill-level-text">Avanzado - 85%</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-bento-card skill-small" data-skill="devops-cloud">
-                    <div class="skill-bento-icon devops-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2v20"></path>
-                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-                        </svg>
-                    </div>
-                    <h4 class="skill-bento-title">DevOps & Cloud</h4>
-                    <div class="skill-tag-cloud">
-                        <span class="skill-tag primary">Azure</span>
-                        <span class="skill-tag primary">Docker</span>
-                        <span class="skill-tag secondary">AWS (EC2, S3, RDS)</span>
-                        <span class="skill-tag secondary">CI/CD</span>
-                        <span class="skill-tag secondary">Kubernetes</span>
-                    </div>
-                    <div class="skill-level">
-                        <div class="skill-level-bar">
-                            <div class="skill-level-fill" style="width: 80%"></div>
-                        </div>
-                        <span class="skill-level-text">Avanzado - 80%</span>
-                    </div>
-                </div>
-
-                <div class="skill-bento-card skill-small" data-skill="testing">
-                    <div class="skill-bento-icon testing-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M9 11l3 3L22 4"></path>
-                            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
-                        </svg>
-                    </div>
-                    <h4 class="skill-bento-title">Testing & Calidad</h4>
-                    <div class="skill-tag-cloud">
-                        <span class="skill-tag primary">xUnit/NUnit</span>
-                        <span class="skill-tag secondary">Unit Testing</span>
-                        <span class="skill-tag secondary">Integration Tests</span>
-                        <span class="skill-tag secondary">Moq</span>
-                        <span class="skill-tag secondary">TDD</span>
-                    </div>
-                    <div class="skill-level">
-                        <div class="skill-level-bar">
-                            <div class="skill-level-fill" style="width: 85%"></div>
-                        </div>
-                        <span class="skill-level-text">Avanzado - 85%</span>
-                    </div>
-                </div>
-
-                <div class="skill-bento-card skill-small" data-skill="tools">
-                    <div class="skill-bento-icon tools-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
-                        </svg>
-                    </div>
-                    <h4 class="skill-bento-title">Herramientas & Otros</h4>
-                    <div class="skill-tag-cloud">
-                        <span class="skill-tag primary">Git</span>
-                        <span class="skill-tag primary">Agile/Scrum</span>
-                        <span class="skill-tag secondary">MS IIS / Apache</span>
-                        <span class="skill-tag secondary">Visual Studio</span>
-                        <span class="skill-tag secondary">Crystal Report</span>
-                    </div>
-                    <div class="skill-level">
-                        <div class="skill-level-bar">
-                            <div class="skill-level-fill" style="width: 90%"></div>
-                        </div>
-                        <span class="skill-level-text">Avanzado - 90%</span>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
-     <!-- Projects Section -->
+
+    <!-- Projects Section -->
     <section id="proyectos" class="projects">
         <div class="container">
             <h3 class="section-title">Proyectos</h3>
@@ -414,9 +435,53 @@
                     Pronto podrás ver en detalle los desafíos que he enfrentado y las soluciones que he implementado.
                 </p>
             </div>
+
+            <!-- Estructura lista para futuros proyectos (comentada) -->
+            <!--
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Nombre del Proyecto">
+                    </div>
+                    <div class="project-content">
+                        <h4 class="project-title">Nombre del Proyecto</h4>
+                        <p class="project-description">
+                            Breve descripción del proyecto explicando el problema que resuelve 
+                            y las tecnologías utilizadas.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">C#</span>
+                            <span class="project-tag">.NET</span>
+                            <span class="project-tag">SQL Server</span>
+                        </div>
+                        <a href="#" class="project-link">Ver Detalles →</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Otro Proyecto">
+                    </div>
+                    <div class="project-content">
+                        <h4 class="project-title">Otro Proyecto</h4>
+                        <p class="project-description">
+                            Descripción del segundo proyecto con detalles sobre su impacto 
+                            y las soluciones técnicas implementadas.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">MongoDB</span>
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Docker</span>
+                        </div>
+                        <a href="#" class="project-link">Ver Detalles →</a>
+                    </div>
+                </div>
+            </div>
+            -->
         </div>
     </section>
-    <!-- Contact Section -->
+
+     <!-- Contact Section -->
     <section id="contacto" class="contact">
         <div class="container">
             <div class="contact-content">
@@ -444,9 +509,42 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p class="footer-text">© 2025 Andrew Ferreras - Portafolio con orgullo</p>
+            <p class="footer-text">© 2025 Andrew Ferreras - Portafolio</p>
         </div>
     </footer>
+
+    <!-- Modal para información de tecnologías -->
+    <div id="techModal" class="tech-modal">
+        <div class="tech-modal-overlay"></div>
+        <div class="tech-modal-content">
+            <button class="tech-modal-close" id="closeModal" aria-label="Cerrar modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="tech-modal-header">
+                <div class="tech-modal-icon" id="modalIcon"></div>
+                <h3 class="tech-modal-title" id="modalTitle"></h3>
+            </div>
+            <div class="tech-modal-body">
+                <p class="tech-modal-description" id="modalDescription"></p>
+                <div class="tech-modal-stats">
+                    <div class="tech-stat">
+                        <span class="tech-stat-label">Nivel de Dominio</span>
+                        <div class="tech-stat-bar">
+                            <div class="tech-stat-fill" id="modalLevel"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="tech-modal-features">
+                    <h4 class="tech-features-title">Lo que puedo hacer con esta tecnología:</h4>
+                    <ul class="tech-features-list" id="modalFeatures"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
